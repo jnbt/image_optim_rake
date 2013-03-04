@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.version     = ImageOptimRake::VERSION
   gem.authors     = ["Jonas Thiel"]
   gem.email       = ["jonasthiel@googlemail.com"]
-  gem.homepage    = "http://www.jonasthiel.de"
+  gem.homepage    = "https://github.com/jnbt/image_optim_rake"
   gem.summary     = %q{Provide a little helper command to minify images}
   gem.description = %q{Provide a little helper command to minify images}
 
