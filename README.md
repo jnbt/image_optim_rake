@@ -1,6 +1,6 @@
 # image_optim_rake
 
-[![Build Status](https://api.travis-ci.org/jnbt/image_optim_rake.png?branch=master)](https://api.travis-ci.org/jnbt/image_optim_rake)
+[![Build Status](https://api.travis-ci.org/jnbt/image_optim_rake.png?branch=master)](https://travis-ci.org/jnbt/image_optim_rake)
 
 A simple wrapper around [image_optim](https://github.com/toy/image_optim) to batch minify all images in one or more directories.
 
