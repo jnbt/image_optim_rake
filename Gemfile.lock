@@ -1,0 +1,33 @@
+PATH
+  remote: .
+  specs:
+    image_optim_rake (0.0.3)
+      image_optim (~> 0.7.3)
+      progressbar (~> 0.20.0)
+      rake
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    fspath (2.0.4)
+    image_optim (0.7.3)
+      fspath (~> 2.0.3)
+      image_size (~> 1.1.2)
+      in_threads (~> 1.1.1)
+      progress (~> 2.4.0)
+    image_size (1.1.2)
+    in_threads (1.1.1)
+    minitest (4.6.2)
+    progress (2.4.0)
+    progressbar (0.20.0)
+    rake (10.1.0)
+    testem (0.1.0)
+      minitest (>= 3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  image_optim_rake!
+  minitest
+  testem
