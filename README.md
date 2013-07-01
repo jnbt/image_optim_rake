@@ -1,6 +1,8 @@
 # image_optim_rake
 
+[![Gem Version](https://badge.fury.io/rb/image_optim_rake.png)](https://rubygems.org/gems/image_optim_rake)
 [![Build Status](https://api.travis-ci.org/jnbt/image_optim_rake.png?branch=master)](https://travis-ci.org/jnbt/image_optim_rake)
+[![Code Climate](https://codeclimate.com/github/jnbt/image_optim_rake.png)](https://codeclimate.com/github/jnbt/image_optim_rake)
 
 A simple wrapper around [image_optim](https://github.com/toy/image_optim) to batch minify all images in one or more directories.
 

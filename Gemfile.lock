@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    image_optim_rake (0.0.3)
-      image_optim (~> 0.7.3)
+    image_optim_rake (0.0.4)
+      image_optim (~> 0.8.1)
       powerbar (~> 1.0.11)
       rake
 
@@ -12,7 +12,7 @@ GEM
     ansi (1.4.3)
     fspath (2.0.4)
     hashie (2.0.5)
-    image_optim (0.7.3)
+    image_optim (0.8.1)
       fspath (~> 2.0.3)
       image_size (~> 1.1.2)
       in_threads (~> 1.1.1)

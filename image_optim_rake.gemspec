@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.require_paths = ["lib"]
 
-  gem.add_dependency "image_optim", "~> 0.7.3"
+  gem.add_dependency "image_optim", "~> 0.8.1"
   gem.add_dependency "rake"
   gem.add_dependency "powerbar", "~> 1.0.11"
 
