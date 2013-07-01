@@ -23,12 +23,23 @@ class MinifierTest < Testem
         sizes[file] = open(file, "rb").size
       end
 
-      minifier = ImageOptimRake::Minifier.new([dir], :threads => true)
+      minifier = ImageOptimRake::Minifier.new([dir], minify_options)
       minifier.process!
 
       Dir.glob(File.join(dir, "**/*.{jpg,png}")).each do |file|
         assert sizes[file] > open(file, "rb").size, "should have reduced the file size"
       end
     end
+  end
+
+  private
+
+  def minify_options
+    # we cannot use pngout on travis CI as this is a binary
+    # which cannot be included in the build process
+    {
+      :threads => true,
+      :pngout  => !ENV['CI']
+    }
   end
 end
