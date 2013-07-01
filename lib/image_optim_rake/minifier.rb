@@ -1,6 +1,6 @@
 require "image_optim_rake/image"
+require "image_optim_rake/progress"
 require "image_optim"
-require "progressbar"
 
 module ImageOptimRake
   class Minifier
@@ -34,14 +34,15 @@ module ImageOptimRake
     end
 
     def process_images!
-      progress = ::ProgressBar.new("Miniying", total_size)
+      progress = Progress.new(:msg => "0/#{total_count}")
       processor = ::ImageOptim.new(config)
-      dirs.values.flatten.each do |image_file|
+      dirs.values.flatten.each_with_index do |image_file, index|
+        number = index + 1
         processor.optimize_image!(image_file.path)
         image_file.reload_size!
-        progress.inc
+        progress.show :msg => "#{number}/#{total_count}", :done => number, :total => total_count
       end
-      progress.finish
+      progress.close
     end
 
     def log_images

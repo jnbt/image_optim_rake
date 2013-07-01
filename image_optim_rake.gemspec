@@ -17,7 +17,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency "image_optim", "~> 0.7.3"
   gem.add_dependency "rake"
-  gem.add_dependency "progressbar", "~> 0.20.0"
+  gem.add_dependency "powerbar", "~> 1.0.11"
 
   gem.add_development_dependency "minitest"
   gem.add_development_dependency "testem"
