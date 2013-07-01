@@ -17,8 +17,8 @@ module ImageOptimRake
       end
     end
 
-    def show(options)
-      super(options, true)
+    def show(options, force = true)
+      super(options, force)
     end
 
   end
