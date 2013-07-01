@@ -19,7 +19,7 @@ module ImageOptimRake
     def define
       namespace name do
         desc "Minify all images found under /app/assets/images and /public/images"
-        task :minify do
+        task :minify => :environment do
           dirs = ENV["dirs"] ? ENV["dirs"].split(",") : self.class.dirs
           Minifier.new(dirs, self.class.config).process!
         end
